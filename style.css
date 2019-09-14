@@ -1,0 +1,116 @@
+/* backgraundImage */
+body, html {
+    height: 100%;
+    margin: 0px;
+  }
+  
+  .bgImage {
+    background-image: url("./images/img1.jpg");
+    height: 100%;
+    transition: 0.5s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* //// */
+.main {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    bottom: -221px;
+    padding: 10px;
+    /* box-shadow: 0px 10px 25px 35px rgba(0,0,0,0.51); */
+    /* box-shadow: 0px 10px 5px 35px rgba(0,0,0,0.51); */
+}
+
+.slides {
+    display: none;
+    position: relative;
+    right: -10%;
+
+}
+
+.slides  img{
+    width: 800px;
+    height: 400px;
+}
+
+.active {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;};
+}
+
+#next, #prev {
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    text-align: center;
+    color:#fff;
+    top: 40%;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#next {
+    right: 2%;
+}
+#prev {
+    left: 2%;
+}
+#prev:hover, #next:hover { 
+    background-color:rgba(102, 102, 102, 0.445);
+}
+
+#pauseRun {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(209, 207, 207, 0.541);
+    color: #fff;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 21px;
+    font-family: cursive;
+    transition: 0.5s;
+} 
+#pauseRun:hover {
+    transform: scale(1.2);
+}
+
+/* /// */
+
+.dotMain {
+    width: 50%;
+    margin: auto;
+    padding: 0px;
+}
+.dot {
+    cursor: pointer;
+    padding: 0px;
+    margin: -2px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.dot:hover {
+    opacity: 0.8;
+}
+.dot img{
+    width: 100px;
+    height: 50px;
+
+}
+.dotActive{
+    transition: 0.5s;
+    opacity: 0.5;
+
+}
+
