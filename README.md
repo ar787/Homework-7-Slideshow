@@ -1,1 +1,1 @@
-# Homework-7-Slideshow
+Slideshow
